@@ -1,6 +1,9 @@
 import React from 'react'
 
 function Card({ totalExpense }) {
+    const changeTitleHandler = () => {
+        console.log("Button Has been Clicked")
+    }
     return (
         <div className='flex justify-between mx-10 mt-4 border border border-solid'>
             <div className='flex border border-solid p-5 m-5 w-[20%] justify-between'>
@@ -9,10 +12,11 @@ function Card({ totalExpense }) {
             </div>
             <div className='border border-solid p-5 m-5'>
                 <h5>{totalExpense.price}</h5>
+
+                <button onClick={changeTitleHandler}> Chnage Title </button>
             </div>
         </div>
 
     )
 }
-
 export default Card
