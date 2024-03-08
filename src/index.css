@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,18 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.logo-icon {
+  transform: rotateY(180deg);
+}
+
+.logo-icon svg {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+}
+
+.logoText {
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
 }

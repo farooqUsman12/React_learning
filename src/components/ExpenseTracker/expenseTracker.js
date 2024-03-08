@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card from './card'
+
 
 const TotalExpense = [
   { date: "18 june 2002", title: "Car", price: "$400" },
@@ -9,10 +10,11 @@ const TotalExpense = [
 
 ]
 function ExpenseTracker() {
+
   return (
     <div>
       {TotalExpense.map((data) => (
-        <Card totalExpense={data} />
+        <Card totalExpense={data}/>
       )
       )}
     </div>
